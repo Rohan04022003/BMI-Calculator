@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Calculate Your BMI</h1>
+                <input type="range" min="1" max="200" id="weight" onchange="updateValue()" value="0">
+                <h3>WEIGHT : <span id="weightData">0</span> kg</h3>
+                <input type="range" min="0" max="250" id="height" onchange="updateValue()" value="0">
+                <h3>HEIGHT : <span id="heightData">0</span> cm</h3>
+            <div id="btn">
+                <button id="calculate">
+                    CALCULATE
+                </button>
+            </div>
+            <div id="resultBox">
+                <h3>Your BMI: <span id="yourBMI">
+                    12.21
+                </span></h3>
+                <p id="suggestions">
+                    ---------------
+                </p>
+            </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
